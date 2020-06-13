@@ -18,7 +18,12 @@ function tambah($data)
   global $conn;
   $nama = htmlspecialchars($data["nama"]);
   $nobp = htmlspecialchars($data["nobp"]);
-  $gambar = htmlspecialchars($data["gambar"]);
+
+  // upload gambar
+  $gambar = upload();
+  if (!$gambar) {
+    return false;
+  }
 
   // query insert data
   $query = "INSERT INTO mahasiswa
@@ -29,6 +34,50 @@ function tambah($data)
 
   return mysqli_affected_rows($conn);
 }
+
+function upload()
+{
+  $namafile = $_FILES['gambar']['name'];
+  $ukuranfile = $_FILES['gambar']['size'];
+  $error = $_FILES['gambar']['error'];
+  $tempname = $_FILES['gambar']['tmp_name'];
+
+  if ($error === 4) {
+    echo "<script>
+        alert('pilih gambar!');
+        </script>";
+    return false;
+  }
+
+  //cek gambar atau tidak
+  $eksgambarvalid = ['jpg', 'jpeg', 'png'];
+  $ekstensigambar = explode('.', $namafile);
+  $ekstensigambar = strtolower(end($ekstensigambar));
+  if (!in_array($ekstensigambar, $eksgambarvalid)) {
+    echo "<script>
+          alert('Bukan Gambar!');
+          </script>";
+    return false;
+  }
+
+  // cek jika ukurannya terlalu besar
+  if ($ukuranfile > 1000000) {
+    echo "<script>
+          alert('Ukuran Gambar terlalu besar!');
+          </script>";
+    return false;
+  }
+  // generate nama gambar baru
+  $namafilebaru = uniqid();
+  $namafilebaru .= '.';
+  $namafilebaru .= $ekstensigambar;
+
+
+  // lolos pengecekan, gambar diupload
+  move_uploaded_file($tempname, 'img/' . $namafilebaru);
+  return $namafilebaru;
+}
+
 
 function hapus($id)
 {
@@ -44,8 +93,16 @@ function ubah($data)
   $id = $data["id"];
   $nama = htmlspecialchars($data["nama"]);
   $nobp = htmlspecialchars($data["nobp"]);
-  $gambar = htmlspecialchars($data["gambar"]);
+  $gambarlama = htmlspecialchars($data["gambarlama"]);
 
+  // cek apakah user pilih gambar baru
+
+
+  if ($_FILES['gambar']['error'] === 4) {
+    $gambar = $gambarlama;
+  } else {
+    $gambar = upload();
+  }
   $query = "UPDATE mahasiswa
   SET
   nama = '$nama', 
@@ -55,4 +112,15 @@ function ubah($data)
   mysqli_query($conn, $query);
 
   return mysqli_affected_rows($conn);
+}
+
+function cari($key)
+{
+  $query = "SELECT * FROM mahasiswa
+              WHERE
+             nama LIKE '%$key%' OR
+             nobp LIKE '%$key' ;
+            ";
+
+  return query($query);
 }

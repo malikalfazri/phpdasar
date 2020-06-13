@@ -15,6 +15,7 @@ if (isset($_POST["submit"])) {
     alert('Data gagal ditambahkan');
     
     </script>";
+    echo mysqli_error($conn);
   }
 }
 ?>
@@ -31,7 +32,7 @@ if (isset($_POST["submit"])) {
 <body>
   <h1>Tambah Data Mahasiswa</h1>
 
-  <form action="" method="POST">
+  <form action="" method="POST" enctype="multipart/form-data">
     <ul>
       <li>
         <label for="nama">Nama :</label>
@@ -43,7 +44,7 @@ if (isset($_POST["submit"])) {
       </li>
       <li>
         <label for="gambar">Gambar :</label>
-        <input type="text" name="gambar"> </li>
+        <input type="file" name="gambar"> </li>
       <li>
         <button type="submit" name="submit">Simpan</button>
       </li>
