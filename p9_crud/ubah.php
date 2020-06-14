@@ -1,5 +1,9 @@
 <?php
-
+session_start();
+if (!isset($_SESSION["login"])) {
+  header("Location: login.php");
+  exit;
+}
 require 'functions.php';
 // ambil id di url
 $id = $_GET["id"];
