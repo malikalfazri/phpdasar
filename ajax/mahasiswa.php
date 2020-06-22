@@ -1,4 +1,5 @@
 <?php
+sleep(1);
 require '../p9.._crudlivesearch/functions.php';
 
 $keyword = $_GET["keyword"];
