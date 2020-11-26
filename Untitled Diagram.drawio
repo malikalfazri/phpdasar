@@ -1,1 +1,70 @@
-<mxfile host="app.diagrams.net" modified="2020-11-26T08:39:23.661Z" agent="5.0 (Windows)" version="13.10.3" etag="HTLUmT3ceXpY99sJfVcP" type="github"><diagram id="avnZXeEN-V_lzaNUE4r1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-11-26T11:18:40.771Z" agent="5.0 (Windows)" etag="vLThnRsN7M2bxslqNFEf" version="13.10.3" type="github">
+  <diagram id="avnZXeEN-V_lzaNUE4r1" name="Page-1">
+    <mxGraphModel dx="868" dy="479" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px&quot;&gt;Versi 1&lt;/font&gt;&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-4" value="&amp;lt;&amp;lt;Client Workstation&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="90" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-5" value="PC Mahasiswa" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-6" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="110" as="sourcePoint" />
+            <mxPoint x="480" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-7" value="&amp;lt;&amp;lt;LAN&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="90" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-9" value="&amp;lt;&amp;lt;Client Workstation&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="90" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-10" value="Server Absensi" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="110" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-11" value="&lt;b&gt;&lt;font style=&quot;font-size: 19px&quot;&gt;Versi 2&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-13" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F19C99;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-14" value="&amp;lt;&amp;lt;Client Workstation&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="290" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-15" value="PC Mahasiswa" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="310" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-16" value="" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#99ff99;shape=mxgraph.archimate.application;appType=artifact" vertex="1" parent="1">
+          <mxGeometry x="65" y="335" width="145" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-17" value="&amp;lt;&amp;lt;HCI Layer&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="345" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-18" value="Sistem Absensi Online" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="85" y="390" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-20" value="" style="endArrow=none;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="359.5" as="sourcePoint" />
+            <mxPoint x="540" y="359.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1z8rg3H6J9-ufY_mwu7u-21" value="&amp;lt;&amp;lt;LAN&amp;gt;&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="394" y="335" width="40" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
